@@ -41,6 +41,7 @@ html.dark {
   --hty-link-color: #0078e7;
   --hty-gray-color: #999;
   --hty-yellow-color: #ff8718;
+  --blockquote-border-left-color: var(--smc-border-color);
 }
 .primary {
   color: #005eb4;
@@ -1551,6 +1552,7 @@ input {
   color: var(--hty-text-color);
   font-weight: 400;
   font-family: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
+  padding: 1rem 0;
 }
 .markdown-body code,
 .markdown-body pre {
@@ -1558,7 +1560,7 @@ input {
 }
 .markdown-body blockquote {
   padding: 0.6rem 1rem;
-  border-left: 4px solid var(--blockquote-border-left-color);
+  border-left: 4px solid var(--blockquote-border-left-color, --smc-border-color);
   background-color: var(--blockquote-bg-color, rgba(0,120,231,0.05));
 }
 .markdown-body blockquote p {
@@ -1570,6 +1572,7 @@ input {
 }
 .markdown-body iframe {
   border: none;
+  width: 100%;
 }
 .post-nav {
   display: flex;
@@ -2084,12 +2087,6 @@ input {
 #github-issues {
   margin: 1rem;
 }
-.v[data-class=v] p {
-  color: var(--hty-text-color) !important;
-}
-.v[data-class=v] p code {
-  color: #000;
-}
 #say {
   color: var(--hty-text-color);
   display: block;
@@ -2125,6 +2122,11 @@ input {
     border-right-width: 0px;
   }
 }
+iframe.bilibili-video {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+}
 .heimu {
   background-color: var(--hty-text-color);
   transition: 0.2s;
@@ -2147,6 +2149,17 @@ input {
 }
 .flex-col {
   flex-direction: column;
+}
+.justfiy-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .w-full {
   width: 100%;
