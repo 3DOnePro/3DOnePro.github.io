@@ -1,4 +1,0 @@
-- <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-- <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
-- <script> LA.init({id:"Jvj3gHXNqjq59MIQ",ck:"Jvj3gHXNqjq59MIQ"})</script>
-- <script>new LingQue.Monitor().init({id:"JvjOLtEmgiITwhH0",sendSuspicious:true});</script>
